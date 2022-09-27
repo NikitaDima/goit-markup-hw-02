@@ -6,27 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--Шапка профіля-->
     <header>
-      <a href="/">WebStudio</a>
+      <a href="/" class="logo link"><span>Web</span>Studio </a>
       <!--Меню навігайції-->
       <nav>
-        <ul>
-          <li><a href="index.html">Студія</a></li>
-          <li><a href="portfolio.html">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+        <ul class="site-nav list">
+          <li><a href="index.html" class="link">Студія</a></li>
+          <li><a href="portfolio.html" class="link">Портфоліо</a></li>
+          <li><a href="#" class="link">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
+      <ul class="contacts list">
         <li>
-          <a href="tel:+380961111111" class="contacts-link"
+          <a href="tel:+380961111111" class="contacts-link link"
             >+38 096 111 11 11</a
           >
         </li>
         <li>
-          <a href="mailto:info@devstudio.com" class="contacts-link"
+          <a href="mailto:info@devstudio.com" class="contacts-link link"
             >info@devstudio.com</a
           >
         </li>
@@ -34,6 +44,7 @@
     </header>
     <!--Головний контент-->
     <main>
+      <!-- Фільтр сторінки портфоліо -->
       <section>
         <ul>
           <li>
@@ -50,6 +61,68 @@
           </li>
           <li>
             <button type="button">Маркетинг</button>
+          </li>
+        </ul>
+      </section>
+      <!-- Наповнення сторінки портфоліо -->
+      <section>
+        <ul>
+          <li>
+            <img
+              src="./images/img-1.jpg"
+              alt="Зображення ноутбука на моніторі якого три людини"
+            />
+            <h3>Технокряк</h3>
+            <p>Веб-сайт</p>
+          </li>
+          <li>
+            <img
+              src="./images/img-2.jpg"
+              alt="Два баскетболісти боряться за м'яч"
+            />
+            <h3>Постер New Orlean vs Golden Star</h3>
+            <p>Дизайн</p>
+          </li>
+          <li>
+            <img
+              src="./images/img-3.jpg"
+              alt="Риба на якій зображено назва ресторану"
+            />
+            <h3>Ресторан Seafood</h3>
+            <p>Додаток</p>
+          </li>
+          <li>
+            <img src="./images/img-4.jpg" alt="Навушники" />
+            <h3>Проєкт Prime</h3>
+            <p>Маркетинг</p>
+          </li>
+          <li>
+            <img
+              src="./images/img-5.jpg"
+              alt="Одна біла коробка одна коричнева"
+            />
+            <h3>Проєкт Boxes</h3>
+            <p>Додаток</p>
+          </li>
+          <li>
+            <img src="./images/img-6.jpg" alt="Монітор" />
+            <h3>Inspiration has no Borders</h3>
+            <p>Веб-сайт</p>
+          </li>
+          <li>
+            <img src="./images/img-7.jpg" alt="Відкрита сторінка журналу" />
+            <h3>Видання Limited Edition</h3>
+            <p>Дизайн</p>
+          </li>
+          <li>
+            <img src="./images/img-8.jpg" alt="Рекламна вивеска" />
+            <h3>Проєкт LAB</h3>
+            <p>Маркетинг</p>
+          </li>
+          <li>
+            <img src="./images/img-9.jpg" alt="Людина працює за ноутбуком" />
+            <h3>Growing Business</h3>
+            <p>Додаток</p>
           </li>
         </ul>
       </section>
