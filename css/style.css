@@ -4,6 +4,7 @@
 /* Акцент #2196F3 */
 /* Вторичний колір фона #F5F4FA */
 /* Колір логотипу #000000 */
+/* Колір фону героя #2F303A */
 body {
     font-family: 'Raleway', sans-serif;
         font-family: 'Roboto', sans-serif;
@@ -21,14 +22,222 @@ background-color: #FFFFFF;
 .logo {
         color: #000000;
     }
-.logo > span {
+.logo > .logo-header {
         color: #2196F3;
     }
 /* Стилізація навігації сайту */
 .site-nav .link {
- color: #2196F3;
+font-family: 'Roboto';
+font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+.site-nav .link:hover {
+    font-family: 'Roboto';
+font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+}
+.site-nav .link:focus {
+    font-family: 'Roboto';
+    font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+
 }
 /* Стилізація контактів  */
 .contacts .contacts-link {
-    color: #2196F3;
+    font-family: 'Roboto';
+font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    
+        color: #757575;
 }
+.contacts .contacts-link:hover {
+    font-family: 'Roboto';
+font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+}
+.contacts .contacts-link:focus {
+        font-family: 'Roboto';
+        font-style: normal;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+        
+            color: #2196F3;
+}
+/* Стилізація героя головного контенту */
+.main-hero {
+    background-color: #2F303A;
+}
+.title-hero {
+    font-family: 'Roboto';
+       
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+        /* or 136% */
+    
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: #FFFFFF;
+}
+.botton-hero {
+    background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+.botton-hero:hover {
+    background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+.botton-hero:focus {
+    background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+.text-main {
+    font-family: 'Roboto';
+       
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+  
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+    
+        color: #FFFFFF;
+}
+/* Стилізація секції "Наші переваги" */
+.main-benefits .title-benefits{
+    display: none;
+}
+.list-benefits .subject-benefits {
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #212121;
+}
+.list-benefits .text-benefits{
+    font-family: 'Roboto';
+                font-size: 14px;
+        line-height: 24px;
+         letter-spacing: 0.03em;
+        color: #757575;
+}
+/*Стилізація секції "Чим ми займаємось"  */
+.title-working {
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: #212121;
+}
+/* Секція "Наша команда" */
+.main-team {
+    background: #F5F4FA;
+}
+.title-team {
+    font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+}
+.list-team .item-team {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+.list-team .text-team {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        /* text-align: center; */
+        letter-spacing: 0.03em;
+        color: #212121;
+}
+.list-team .desc-team {
+    font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 19px;
+        /* text-align: center; */
+        letter-spacing: 0.03em;
+    
+        color: #757575;
+}
+/* Стіль футера */
+.footer-contact {
+    background: #2F303A;
+}
+.logo-footer {
+    font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;  
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        
+}
+.footer-desc {
+    font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: #2196F3;
+}
+.list-footer .address-link {
+    font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+}
+.list-footer .address-link:hover {
+    font-family: 'Roboto';
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+}
+.list-footer .address-link:focus {
+        font-family: 'Roboto';
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+}
+
+
