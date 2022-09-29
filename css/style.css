@@ -6,7 +6,6 @@
 /* Колір логотипу #000000 */
 /* Колір фону героя #2F303A */
 body {
-    font-family: 'Raleway', sans-serif;
         font-family: 'Roboto', sans-serif;
     color: #212121;
 background-color: #FFFFFF;
@@ -41,8 +40,6 @@ background-color: #FFFFFF;
     }
 /* Стилізація навігації сайту */
 .site-nav .link {
-font-family: 'Roboto';
-font-style: normal;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -50,7 +47,6 @@ font-style: normal;
     color: #212121;
 }
 .site-nav .link:hover {
-    font-family: 'Roboto';
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
@@ -58,8 +54,6 @@ font-style: normal;
         color: #2196F3;
 }
 .site-nav .link:focus {
-    font-family: 'Roboto';
-    font-style: normal;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
@@ -69,8 +63,6 @@ font-style: normal;
 }
 /* Стилізація контактів  */
 .contacts .contacts-link {
-    font-family: 'Roboto';
-font-style: normal;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
@@ -78,8 +70,6 @@ font-style: normal;
         color: #757575;
 }
 .contacts .contacts-link:hover {
-    font-family: 'Roboto';
-font-style: normal;
         font-size: 14px;
         line-height: 16px;
         letter-spacing: 0.02em;
@@ -87,8 +77,6 @@ font-style: normal;
         color: #2196F3;
 }
 .contacts .contacts-link:focus {
-        font-family: 'Roboto';
-        font-style: normal;
             font-size: 14px;
             line-height: 16px;
             letter-spacing: 0.02em;
@@ -100,13 +88,9 @@ font-style: normal;
     background-color: #2F303A;
 }
 .title-hero {
-    font-family: 'Roboto';
-       
         font-weight: 900;
         font-size: 44px;
         line-height: 60px;
-        /* or 136% */
-    
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -114,6 +98,7 @@ font-style: normal;
         color: #FFFFFF;
 }
 .botton-hero {
+    border: 0px;
     background: #2196F3;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
@@ -129,25 +114,29 @@ font-style: normal;
         border-radius: 4px;
 }
 .text-main {
-    font-family: 'Roboto';
-       
         font-weight: 700;
         font-size: 16px;
         line-height: 30px;
-  
-        display: flex;
+          display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
-    
         color: #FFFFFF;
 }
 /* Стилізація секції "Наші переваги" */
-.main-benefits .title-benefits{
-    display: none;
+.visually-hidden {
+    position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
 }
 .list-benefits .subject-benefits {
-    font-family: 'Roboto';
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
@@ -156,7 +145,6 @@ font-style: normal;
         color: #212121;
 }
 .list-benefits .text-benefits{
-    font-family: 'Roboto';
                 font-size: 14px;
         line-height: 24px;
          letter-spacing: 0.03em;
@@ -164,7 +152,6 @@ font-style: normal;
 }
 /*Стилізація секції "Чим ми займаємось"  */
 .title-working {
-    font-family: 'Roboto';
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
@@ -178,7 +165,6 @@ font-style: normal;
     background: #F5F4FA;
 }
 .title-team {
-    font-family: 'Roboto';
         font-weight: 700;
         font-size: 36px;
         line-height: 42px;
@@ -192,7 +178,6 @@ font-style: normal;
     border-radius: 0px 0px 4px 4px;
 }
 .list-team .text-team {
-        font-family: 'Roboto';
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
@@ -201,7 +186,6 @@ font-style: normal;
         color: #212121;
 }
 .list-team .desc-team {
-    font-family: 'Roboto';
         font-size: 16px;
         line-height: 19px;
         /* text-align: center; */
@@ -211,33 +195,47 @@ font-style: normal;
 }
 
 /* Стилі кнопок фільтра */
-.botton-filter .btn {
-    font-family: 'Roboto';
-        font-weight: 500;
+.filter-portfolio .btn {
+    border: 0px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.filter-portfolio .btn:hover {
+    border: 0px;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 500;
         font-size: 16px;
         line-height: 26px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: #FFFFFF;
 }
-.botton-filter .btn:hover {
-    background: #2196F3;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-}
-.botton-filter .btn:focus {
+.filter-portfolio .btn:focus {
+        border: 0px;
         background: #2196F3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         border-radius: 4px;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
 }
 /* Стилі контенту портфоліо */
-.picture-portfolio .item-portfolio {
+.filter-portfolio .item-portfolio {
     box-sizing: border-box;
         background: #FFFFFF;
         border: 1px solid #EEEEEE;
 }
 .list-portfolio .title-portfolio {
-    font-family: 'Roboto';
         font-weight: 700;
         font-size: 18px;
         line-height: 36px;
@@ -245,7 +243,6 @@ font-style: normal;
         color: #212121;
 }
 .list-portfolio .text-portfolio {
-    font-family: 'Roboto';
         font-size: 16px;
         line-height: 30px;
         letter-spacing: 0.03em;
@@ -266,7 +263,6 @@ font-style: normal;
 }
 .footer-desc {
     font-family: 'Raleway';
-        font-style: normal;
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
@@ -274,7 +270,6 @@ font-style: normal;
         color: #2196F3;
 }
 .list-footer .address-link {
-font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -283,7 +278,6 @@ font-family: 'Roboto';
         color: rgba(255, 255, 255, 0.6);
 }
 .list-footer .address-link:hover {
-font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -292,13 +286,12 @@ font-family: 'Roboto';
         color: #FFFFFF;
 }
 .list-footer .address-link:focus {
-font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-            color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 
