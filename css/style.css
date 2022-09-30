@@ -5,10 +5,16 @@
 /* Вторичний колір фона #F5F4FA */
 /* Колір логотипу #000000 */
 /* Колір фону героя #2F303A */
+:root {
+    --primary-text-color: #212121;
+    --title-text-color: #FFFFFF;
+    --desc-text-color: #757575;
+    --accent-color: #2196F3;
+}
 body {
+    color: var(--primary-text-color);
         font-family: 'Roboto', sans-serif;
-    color: #212121;
-background-color: #FFFFFF;
+        background-color: var(--title-text-color)
 }
 /* Утіліти */
 .list {
@@ -16,6 +22,9 @@ background-color: #FFFFFF;
 }
 .link {
     text-decoration: none;
+}
+.site-nav .link.current {
+    color: var(--accent-color);
 }
 /* Стилізація шапки */
 .header {
@@ -26,62 +35,42 @@ background-color: #FFFFFF;
     font-family: 'Raleway';
         font-weight: 700;
         font-size: 26px;
-        line-height: 31px;
+        line-height: 1.192;
         letter-spacing: 0.03em;
     color: #000000;
     }
 .logo > .logo-header {
-    font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-        color: #2196F3;
+        color: var(--accent-color)
     }
 /* Стилізація навігації сайту */
 .site-nav .link {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.142;
     letter-spacing: 0.02em;
 
-    color: #212121;
+    color: var(--primary-text-color)
 }
 .site-nav .link:hover {
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #2196F3;
+        color: var(--accent-color);
 }
 .site-nav .link:focus {
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #2196F3;
+        color: var(--accent-color);
 
 }
 /* Стилізація контактів  */
+.contacts {
+            font-size: 14px;
+                line-height: 1.142;
+                letter-spacing: 0.02em;
+}
 .contacts .contacts-link {
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #757575;
+         color: var(--desc-text-color)
 }
 .contacts .contacts-link:hover {
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.02em;
-    
-        color: #2196F3;
+          color: var(--accent-color);
 }
 .contacts .contacts-link:focus {
-            font-size: 14px;
-            line-height: 16px;
-            letter-spacing: 0.02em;
-        
-            color: #2196F3;
+            color: var(--accent-color);
 }
 /* Стилізація героя головного контенту */
 .main-hero {
@@ -90,38 +79,32 @@ background-color: #FFFFFF;
 .title-hero {
         font-weight: 900;
         font-size: 44px;
-        line-height: 60px;
-        text-align: center;
+        line-height: 1.363;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-    
-        color: #FFFFFF;
+        color: var(--title-text-color)
 }
 .botton-hero {
     border: 0px;
-    background: #2196F3;
+    background: var(--accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 }
 .botton-hero:hover {
     background: #188CE8;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
 }
 .botton-hero:focus {
     background: #188CE8;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
 }
 .text-main {
         font-weight: 700;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.87;
           display: flex;
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
-        color: #FFFFFF;
+        color: var(--title-text-color);
 }
 /* Стилізація секції "Наші переваги" */
 .visually-hidden {
@@ -139,26 +122,22 @@ background-color: #FFFFFF;
 .list-benefits .subject-benefits {
         font-weight: 700;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.142;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #212121;
 }
 .list-benefits .text-benefits{
                 font-size: 14px;
-        line-height: 24px;
+        line-height: 1.714;
          letter-spacing: 0.03em;
-        color: #757575;
+        color: var(--desc-text-color)
 }
 /*Стилізація секції "Чим ми займаємось"  */
 .title-working {
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
-        text-align: center;
+        line-height: 1.166;
         letter-spacing: 0.03em;
-    
-        color: #212121;
 }
 /* Секція "Наша команда" */
 .main-team {
@@ -170,28 +149,22 @@ background-color: #FFFFFF;
         line-height: 42px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+}
+.list-team {
+            font-size: 16px;
+                line-height: 1.187;
+                letter-spacing: 0.03em;
 }
 .list-team .item-team {
-    background: #FFFFFF;
+    background: var(--title-text-color)
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 .list-team .text-team {
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        /* text-align: center; */
-        letter-spacing: 0.03em;
-        color: #212121;
-}
+       }
 .list-team .desc-team {
-        font-size: 16px;
-        line-height: 19px;
-        /* text-align: center; */
-        letter-spacing: 0.03em;
-    
-        color: #757575;
+        color: var(--desc-text-color)
 }
 
 /* Стилі кнопок фільтра */
@@ -201,52 +174,37 @@ background-color: #FFFFFF;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
-}
+   }
 .filter-portfolio .btn:hover {
-    border: 0px;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-weight: 500;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: var(--title-text-color)
 }
 .filter-portfolio .btn:focus {
-        border: 0px;
-        background: #2196F3;
+        background: var(--accent-color);
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        font-size: 16px;
-        line-height: 26px;
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: var(--title-text-color)
 }
 /* Стилі контенту портфоліо */
 .filter-portfolio .item-portfolio {
     box-sizing: border-box;
-        background: #FFFFFF;
+        background: var(--title-text-color)
         border: 1px solid #EEEEEE;
 }
 .list-portfolio .title-portfolio {
         font-weight: 700;
         font-size: 18px;
-        line-height: 36px;
+        line-height: 2;
         letter-spacing: 0.06em;
-        color: #212121;
-}
+       }
 .list-portfolio .text-portfolio {
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.875;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: var(--desc-text-color)
 }
 /* Стіль футера */
 .footer-contact {
@@ -258,24 +216,22 @@ background-color: #FFFFFF;
         font-size: 26px;
         line-height: 31px;  
         letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: var(--title-text-color)
         
 }
 .footer-desc {
-    font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 31px;
-        letter-spacing: 0.03em;
-        color: #2196F3;
+        color: var(--accent-color);
 }
+.list-footer .item-footer .address-link  {
+    color: var(--title-text-color)
+}
+
 .list-footer .address-link {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 }
 .list-footer .address-link:hover {
     font-style: normal;
@@ -283,15 +239,11 @@ background-color: #FFFFFF;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-        color: #FFFFFF;
+        color: var(--accent-color)
 }
 .list-footer .address-link:focus {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
-
+    color: var(--accent-color)
